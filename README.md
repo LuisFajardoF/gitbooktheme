@@ -25,6 +25,17 @@ This theme can be used just as other [Jekyll themes][1].
 
 [Fork][3] this repository and add your markdown posts to the `_posts` folder.
 
+# Solved configuration errors Ruby
+
+Change ruby version: 2.5.5 in `Gemfile` _(2.5.5 is a Ruby version of my system)_.
+
+In Terminal:
+```
+gem install nokogiri
+bundle install
+bundle exec jekyll serve
+```
+
 ## License
 
 This work is open sourced under the Apache License, Version 2.0.
