@@ -19,7 +19,7 @@ changes to the original repo.
 
 This theme can be used just as other [Jekyll themes][1].
 
-This repository fork of: [sighingnow][3].
+This repository fork of: [@sighingnow][3].
 
 # Compile with Ruby
 
