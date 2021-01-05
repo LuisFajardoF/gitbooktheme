@@ -2,10 +2,6 @@
 
 Make Jelly site have a GitBook look!
 
-## Demo
-
-[https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
-
 ## Why Jekyll with GitBook
 
 GitBook is an amazing frontend style to present and organize contents (such as book chapters
@@ -23,18 +19,26 @@ changes to the original repo.
 
 This theme can be used just as other [Jekyll themes][1].
 
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
+This repository fork of: [sighingnow][3].
 
-# Solved configuration errors Ruby
+# Compile with Ruby
 
 Change ruby version: 2.5.5 in `Gemfile` _(2.5.5 is a Ruby version of my system)_.
 
 In Terminal:
 ```
-gem install nokogiri
 bundle install
 bundle exec jekyll serve
 ```
+
+Or execute the files in folder `scripts`:
+
+```
+sh scripts/bootstrap
+sh scripts/server
+```
+
+The last command open a conection _(localhost)_ in the next address: `http://127.0.0.1:4000/gitbooktheme/` 
 
 ## License
 
@@ -44,4 +48,4 @@ Copyright 2019 Tao He.
 
 [1]: https://pages.github.com
 [2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
+[3]: https://github.com/sighingnow/jekyll-gitbook/
