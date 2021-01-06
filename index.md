@@ -4,7 +4,7 @@ layout: home
 ---
 
 {:refdef: style="text-align: center;"}
-![md2tex logo](/images/md2tex.png)
+![md2tex logo](/assets/md2tex.png)
 {: refdef}
 
 Es una herramienta creada con el fin de proporcionar una interfaz simple
@@ -29,7 +29,7 @@ el contenido del archivo y si no se producen errores generará código LaTeX cre
 archivo de extensión `.pdf`.
 
 {:refdef: style="text-align: center;"}
-![md2tex control flow](/images/flujo-ejecucion-md2tex.png)
+![md2tex control flow](/assets/flujo-ejecucion-md2tex.png)
 {: refdef}
 
 La ilustración anterior muestra el flujo de ejecución para generar un archivo PDF con **md2tex**. 

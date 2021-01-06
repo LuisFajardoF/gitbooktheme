@@ -108,12 +108,12 @@
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code {
-  background: #fdf6e3;
-  color: #657b83;
-  border-color: #f8df9c;
+  background: #ebeef0b4;
+  color: #303638;
+  border-color: #0f1111;
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal .highlight {
-  background-color: inherit;
+  background-color: #ebeef0b4;
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal table th,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal table td {
@@ -156,12 +156,12 @@
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
-  color: #9dbed8;
-  background: #2d3143;
+  color: rgb(255, 255, 255);
+  background: rgb(73, 115, 126);
   border-color: #2d3143;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .highlight {
-  background-color: #282a39;
+  background-color: rgb(73, 115, 126);
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table th,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table td {
@@ -194,10 +194,10 @@
   background: transparent;
 }
 .book.color-theme-2 .book-header .btn {
-  color: #3b3f54;
+  color: #bbbaf8;
 }
 .book.color-theme-2 .book-header .btn:hover {
-  color: #fffff5;
+  color: #f5f8f4;
   background: none;
 }
 .book.color-theme-2 .book-header h1 {
@@ -219,8 +219,8 @@
  * Theme 1
  */
 .book.color-theme-1 .book-summary {
-  color: #afa790;
-  background: #111111;
+  color: #5c5a54;
+  background: #e2e2e2;
   border-right: 1px solid rgba(0, 0, 0, 0.07);
 }
 .book.color-theme-1 .book-summary .book-search {
@@ -257,7 +257,7 @@
  */
 .book.color-theme-2 .book-summary {
   color: #bcc1d2;
-  background: #2d3143;
+  background: #f1f5fa;
   border-right: none;
 }
 .book.color-theme-2 .book-summary .book-search {
@@ -279,7 +279,7 @@
 }
 .book.color-theme-2 .book-summary ul.summary li a,
 .book.color-theme-2 .book-summary ul.summary li span {
-  color: #c1c6d7;
+  color: #4c4d50;
   background: transparent;
   font-weight: 600;
 }

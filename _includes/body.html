@@ -10,10 +10,14 @@
             {% endif %}
         </h1>
     </div>
+
     <div class="page-wrapper" tabindex="-1" role="main">
         <div class="page-inner">
             <div id="book-search-results">
                 <div class="search-noresults">
+                    <h4 style="text-align:right;color:#b3b3b3;">
+                        {{ page.date | date_to_string }}
+                    </h4>
                     <section class="normal markdown-section">
 
                         {% if page.title %}
