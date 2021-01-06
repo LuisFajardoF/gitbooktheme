@@ -20,5 +20,19 @@ rigurosamente el formato sintáctico de Markdown.
 
 Con **md2tex** se abordan las principales funcionalidades de LaTeX, de manera que el usuario
 pueda escribir documentación técnica con la calidad que LaTeX proporciona. Se busca que el 
-usuario aproveche estas funcionalidades al máximo, sin tener conocimientos previos de LaTeX. 
-Lo único que el usuario necesita es un compilador de LaTeX instalado en un sistema operativo Linux.
+usuario aproveche estas funcionalidades al máximo aunque no tenga conocimientos previos de LaTeX.
+
+**md2tex** requiere de una entrada proporcionada por el usuario, es decir, el usuario crea un nuevo
+archivo de texto con la extensión `.md`, escribe texto en el archivo, **md2tex** tratará de interpretar
+el contenido del archivo y si no se producen errores generará código LaTeX creando un archivo de extensión
+`.tex`, este archivo podrá ser compilado por el compilador **pdflatex** y de esta manera se generará un 
+archivo de extensión `.pdf`.
+
+{:refdef: style="text-align: center;"}
+![md2tex control flow](/images/flujo-ejecucion-md2tex.png)
+{: refdef}
+
+La ilustración anterior muestra el flujo de ejecución para generar un archivo PDF con **md2tex**. 
+
+
+
