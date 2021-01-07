@@ -156,12 +156,12 @@
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
-  color: rgb(255, 255, 255);
-  background: rgb(73, 115, 126);
+  color: rgb(70, 68, 68);
+  background: rgb(194, 189, 181);
   border-color: #2d3143;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .highlight {
-  background-color: rgb(73, 115, 126);
+  background-color: rgb(194, 189, 181);
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table th,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table td {
@@ -288,4 +288,11 @@
   color: #f4f4f5;
   background: #252737;
   font-weight: 600;
+}
+
+/* edition class */
+.edition-post {
+  color: #b3b3b3; 
+  text-align:right;
+  font-weight: bold;
 }

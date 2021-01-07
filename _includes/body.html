@@ -15,9 +15,9 @@
         <div class="page-inner">
             <div id="book-search-results">
                 <div class="search-noresults">
-                    <h4 style="text-align:right;color:#b3b3b3;">
+                    <h3 class="edition-post">
                         {{ page.date | date_to_string }}
-                    </h4>
+                    </h3>
                     <section class="normal markdown-section">
 
                         {% if page.title %}
@@ -28,6 +28,9 @@
 
                         {{ content }}
                     </section>
+                    <h6 class="edition-post">
+                        Editado: {{ page.edited | date_to_string }} | Autor: {{ page.author }}
+                    </h6>
                 </div>
 
                 <!-- {%- include search.html -%} -->

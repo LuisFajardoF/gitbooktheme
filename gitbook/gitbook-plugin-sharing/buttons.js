@@ -1,8 +1,8 @@
 require(['gitbook', 'jquery'], function(gitbook, $) {
     var SITES = {
         'github': {
-            'label': 'GitHub',
-            'icon': 'fa fa-github',
+            'label': '   GitHub',
+            'icon': 'fab fa-github',
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://github.com/LuisFajardoF');
@@ -10,10 +10,18 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         },
         'telegram': {
             'label': 'Telegram',
-            'icon': 'fa fa-telegram', 
+            'icon': 'fab fa-telegram', 
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://t.me/luis96791');
+            }
+        },
+        'drive': {
+            'label': 'Drive',
+            'icon': 'fab fa-google-drive', 
+            'onClick': function(e) {
+                e.preventDefault();
+                window.open('https://drive.google.com/drive/folders/1wTUhL7A_du4tEzAGAipMlLb4aL4DkbmL?usp=sharing');
             }
         }
     };
@@ -39,7 +47,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 icon: 'fa fa-share-alt',
                 label: 'Share',
                 position: 'right',
-                dropdown: [menu]
+                dropdown: menu
             });
         }
 

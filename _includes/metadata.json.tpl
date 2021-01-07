@@ -22,9 +22,10 @@
             },
             "search": {},
             "sharing": {
-                "all": ["github", "telegram"],
+                "all": ["github", "telegram", "drive"],
                 "github": true,
-                "telegram": false,
+                "telegram": true,
+                "drive": true,
             },
             "theme-default": {
                 "showLevel": false,

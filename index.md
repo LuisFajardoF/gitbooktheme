@@ -1,10 +1,13 @@
 ---
 title:  md2tex
+author: Luis E. Fajardo
+date: 05-01-2021
+edited: 05-01-2021
 layout: home
 ---
 
 {:refdef: style="text-align: center;"}
-![md2tex logo](/assets/md2tex.png)
+![md2tex logo][1]
 {: refdef}
 
 Es una herramienta creada con el fin de proporcionar una interfaz simple
@@ -29,10 +32,10 @@ el contenido del archivo y si no se producen errores generará código LaTeX cre
 archivo de extensión `.pdf`.
 
 {:refdef: style="text-align: center;"}
-![md2tex control flow](/assets/flujo-ejecucion-md2tex.png)
+![md2tex control flow][2]
 {: refdef}
 
 La ilustración anterior muestra el flujo de ejecución para generar un archivo PDF con **md2tex**. 
 
-
-
+[1]: /assets/md2tex.png
+[2]: /assets/flujo-ejecucion-md2tex.png

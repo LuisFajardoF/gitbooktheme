@@ -38,7 +38,7 @@ sh scripts/bootstrap
 sh scripts/server
 ```
 
-The last command open a conection _(localhost)_ in the next address: `http://127.0.0.1:4000/gitbooktheme/` 
+The last command open a conection _(localhost)_ in the next address: `http://127.0.0.1:4000/md2tex-docs/` 
 
 ## License
 
