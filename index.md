@@ -37,5 +37,5 @@ archivo de extensión `.pdf`.
 
 La ilustración anterior muestra el flujo de ejecución para generar un archivo PDF con **md2tex**. 
 
-[1]: /assets/md2tex.png
-[2]: /assets/flujo-ejecucion-md2tex.png
+[1]: /assets/images/md2tex.png
+[2]: /assets/images/flujo-ejecucion-md2tex.png

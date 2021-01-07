@@ -15,14 +15,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 e.preventDefault();
                 window.open('https://t.me/luis96791');
             }
-        },
-        'drive': {
-            'label': 'Drive',
-            'icon': 'fab fa-google-drive', 
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('https://drive.google.com/drive/folders/1wTUhL7A_du4tEzAGAipMlLb4aL4DkbmL?usp=sharing');
-            }
         }
     };
 

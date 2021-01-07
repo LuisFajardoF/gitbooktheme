@@ -19,7 +19,7 @@ Para las palabras que requieren uso de tilde en **md2tex** se hace uso del carac
 antes de la letra a tildar, por ejemplo: `inversión` en **md2tex** deberá ser escrita como _inversi'on_.
 A continuación se presenta una demostración de texto plano en **md2tex**:
 
-```markdown
+```md
 !--
     cover: default {
         title: El inspector Cambalache y el robo en el museo
@@ -95,4 +95,4 @@ siguiente:
 
 
 [1]: https://ondiz.github.io/cursoLatex/Contenido/Ap1.Auxiliares.html
-[2]: ../assets/pdflatex/plain-text.png
+[2]: ../assets/images/pdflatex/plain-text.png
