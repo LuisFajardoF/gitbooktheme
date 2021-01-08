@@ -6,10 +6,8 @@ edited: 05-01-2021
 layout: home
 ---
 
-{:refdef: style="text-align: center;"}
-![md2tex logo][1]
-{: refdef}
-
+![md2tex logo][1]{:title="Logo md2tex" class="center-image"}
+***
 Es una herramienta creada con el fin de proporcionar una interfaz simple
 para la elaboración de documentos PDF, utilizando Markdown y LaTeX. El
 usuario necesita conocer la estructura sintáctica de **md2tex** pero no necesita 
@@ -31,9 +29,7 @@ el contenido del archivo y si no se producen errores generará código LaTeX cre
 `.tex`, este archivo podrá ser compilado por el compilador **pdflatex** y de esta manera se generará un 
 archivo de extensión `.pdf`.
 
-{:refdef: style="text-align: center;"}
-![md2tex control flow][2]
-{: refdef}
+![md2tex control flow][2]{:title="Flujo de ejecución de md2tex" class="center-image"}
 
 La ilustración anterior muestra el flujo de ejecución para generar un archivo PDF con **md2tex**. 
 

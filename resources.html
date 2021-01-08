@@ -2,7 +2,7 @@
 title: Recursos
 author: Luis E.Fajardo
 date: 07-01-2021
-edited: 07-01-2021
+edited: 08-01-2021
 layout: home
 ---
 
@@ -17,11 +17,7 @@ layout: home
         letter-spacing: -1px;
     }
     hr.solid {
-        border-top: 1px solid #bbb;
-    }
-    .comment {
-        margin: 30px;
-        color: grey;
+        border-top: 1px solid rgb(211, 211, 205);
     }
 </style>
 
@@ -33,33 +29,72 @@ layout: home
 
     <hr class="divider">
     <h3>
-        <a href="{{site.baseurl}}/assets/app/v1/md2tex" target="blank">
+        <a href="{{site.baseurl}}/assets/app/v1/md2tex" target="_blank">
             md2tex v1
         </a>
     </h3>
-    <p class="comment">
+    <blockquote>
         Descargue la primera versión de <strong>md2tex</strong>. Esta vesión aún se encuentra en desarrollo.
-    </p>
+    </blockquote>
 
     <hr class="divider">
     <h3>
-        <a href="{{site.baseurl}}/assets/pdf/dev-tools.pdf" target="blank">
+        <a href="{{site.baseurl}}/assets/pdf/dev-tools.pdf" target="_blank">
             Instalación de herramientas para compilación de md2tex
         </a>
     </h3>
-    <p class="comment">
+    <blockquote>
         Explicación paso a paso de las herramientas a instalar para la compilación del proyecto <strong>md2tex</strong>.
         La herramienta <strong>md2tex</strong> ha sido desarrollada en C++. 
-    </p>
+    </blockquote>
 
     <hr class="divider">
     <h3>
-        <a href="{{site.baseurl}}/assets/pdf/md2tex-v1.pdf" target="blank">
+        <a href="{{site.baseurl}}/assets/pdf/md2tex-v1.pdf" target="_blank">
             Funcionalidades md2tex
         </a>
     </h3>
-    <p class="comment">
+    <blockquote>
         Demostración del funcionamiento de <strong>md2tex</strong>. Explicación y demostración de aspectos
-        sintácticos de la herramienta.  
-    </p>
+        sintácticos de la herramienta. 
+    </blockquote>
+
+    <hr class="divider">
+    <h3>
+        <a href="https://cmake.org/download/" target="_blank">
+            Cmake
+        </a>
+    </h3>
+    <blockquote>
+        Descargue la versión mas reciente de <strong>Cmake</strong> para Linux. Una vez descargado descomprima el archivo y
+        ejecute los siguientes comandos:
+        <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="nv">$ </span>./bootstrap
+<span class="nv">$ </span>make
+<span class="nv">$ </span>make install</code></pre>
+            </div>
+        </div>
+        Para comprobar que <strong>Cmake</strong> se ha instalado en su sistema, ejecute:
+        <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="nv">$ </span>cmake --version</code></pre>
+            </div>
+        </div>
+    </blockquote>
+
+    <hr class="divider">
+    <h3>
+        <a href="{{site.baseurl}}/assets/cmake/UseLATEX.cmake" target="_blank">
+            UseLATEX.cmake
+        </a>
+    </h3>
+    <blockquote>
+        Descargue <strong>UseLATEX.cmake</strong>, este archivo le servirá para compilar sus archivos LaTeX con Cmake.
+        Este archivo deberá estar dentro de la capeta <code class="language-plaintext highlighter-rouge">latex/</code> de su proyecto.
+        <blockquote>
+            <strong>UseLATEX.cmake</strong> pertenece al proyecto <strong>UseLATEX</strong> y ha sido desarrollado por <a href="https://gitlab.kitware.com/kmorel/UseLATEX/" target="_blank">Kenneth Moreland</a>.
+            Si desea leer documentación acerca del uso de <strong>UseLATEX.cmake</strong>: <a href="https://gitlab.kitware.com/kmorel/UseLATEX/raw/master/UseLATEX.pdf" target="_blank">LATEX Document Building Made Easy</a>.
+        </blockquote>
+    </blockquote>
 </div>

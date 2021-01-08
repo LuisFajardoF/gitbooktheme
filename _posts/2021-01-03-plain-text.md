@@ -3,10 +3,10 @@ title: Procesamiento de Texto Plano
 author: Luis E. Fajardo
 category: plaintext
 date: 05-01-2021
-edited: 06-01-2021
+edited: 08-01-2021
 layout: post
 ---
-
+***
 **md2tex** interpreta los bloques de texto de manera secuencial, leyendo las líneas
 del bloque de texto de izquierda a derecha, de esta manera traslada el texto del archivo de
 entrada hacia el archivo de salida.
@@ -65,7 +65,6 @@ El archivo anterior se encontrará en la carpeta `/latex/tex`, ahí aparecerá c
 Para compilar el archivo con **pdflatex** desde la terminal escriba lo siguiente:
 
 ```bash
-$ cd latex/tex
 $ pdflatex test.tex
 ```
 
@@ -80,16 +79,17 @@ tex
 
 A continuación se explica un poco acerca de los archivos `.aux` y `.log`:
 
-- **aux**: sirve para gestionar las referencias cruzadas (\ref) y las citas bibliográficas (\cite), entre otras cosas. En general, guarda la información que ha de pasarse de un proceso de compilación a otro.
-- **log**: aquí se guarda la información sobre el proceso de compilación, las advertencias, los errores, los paquetes utilizados con su respectiva versión y tal. Es especialmente útil si nos falla al crear el documento y no sabemos por qué (Tomado de: [Una nota sobre los archivos auxiliares][1]).
+- **aux**: sirve para gestionar las referencias cruzadas (\ref) y las citas bibliográficas (\cite), entre 
+otras cosas. En general, guarda la información que ha de pasarse de un proceso de compilación a otro.
+- **log**: aquí se guarda la información sobre el proceso de compilación, las advertencias, los errores, 
+los paquetes utilizados con su respectiva versión y tal. Es especialmente útil si nos falla al crear el 
+documento y no sabemos por qué _(Tomado de: [Una nota sobre los archivos auxiliares][1]{:target="_blank"})_.
 
 
 El archivo `test.pdf` puede abrirlo con su lector de archivos PDF. El resultado será similar al
 siguiente:
 
-{:refdef: style="text-align: center;"}
-![plain text image][2]
-{: refdef}
+![plain text image][2]{:title="Apariencia Texto Plano LaTeX" class="center-image"}
 
 > Debido a limitaciones de la herramienta no se soportan caracteres en formato UTF-8.
 

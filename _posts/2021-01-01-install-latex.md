@@ -1,12 +1,12 @@
 ---
-title: Entorno de ejecución de md2tex
+title: Instalación de paquetes LaTeX
 author: Luis E. Fajardo
 date: 05-01-2021
-edited: 05-01-2021
+edited: 08-01-2021
 category: env
 layout: post
 ---
-
+***
 Los requerimientos para elaborar documentos PDF con **md2tex** son los siguientes:
 - Sistema operativo Linux (de preferencia Debian).
 - Instalación de paquete `texlive-lang-spanish`.
