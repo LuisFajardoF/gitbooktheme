@@ -2,11 +2,18 @@
 title: Entorno de ejecución
 author: Luis E. Fajardo
 date: 05-01-2021
-edited: 08-01-2021
+edited: 09-01-2021
 category: env
 layout: post
 ---
+
+**Contenido**
+* TOC
+{:toc}
 ***
+
+### Ejecución de _md2tex_
+
 Al momento de ejecutar **md2tex** puede decidir hacerlo de dos maneras:
 - Ejecutar **md2tex** como un archivo ejecutable local.
 > Si desea tener **md2tex** como un archivo local puede descargarlo en la sección [Recursos][1]
@@ -29,11 +36,11 @@ Al momento de ejecutar **md2tex** puede decidir hacerlo de dos maneras:
 
 ### Estructura de *md2tex*
 
-Cuando ejecute md2tex se crearán los siguientes archivos y carpetas:
+Cuando ejecute md2tex se crearán los siguientes archivos y carpetas _(las carpetas puede crearlas usted mismo)_:
 - `latex/tex`: Aquí se crearan los archivos `.tex` generados por **md2tex**. Los archivos creados aquí pueden ser tomados para ser compilados por **pdflatex**.
 - `latex/images`: Si su documento requiere imagenes deberá ponerlas en esta carpeta, ya que **md2tex** define esta ruta para las imagenes y por lo tanto el compilador **pdflatex** las buscará en esta ruta.
 
-#### Compilación de archivos LaTeX desde línea de comandos.
+### Compilación de archivos LaTeX desde línea de comandos.
 
 Al ejecutar **pdflatex** se compilarán los archivos `.tex` y obtendrá su documento PDF.
 En la línea de comandos puede escribir lo siguiente:
@@ -42,7 +49,7 @@ En la línea de comandos puede escribir lo siguiente:
 $ pdflatex <.tex files...>
 ```
 
-#### Compilación de archivos LaTeX con _CMake_.
+### Compilación de archivos LaTeX con _CMake_.
 
 > - [Que es CMake?][2]{:target="_blank"}
 

@@ -7,6 +7,7 @@ layout: home
 ---
 
 ![md2tex logo][1]{:title="Logo md2tex" class="center-image"}
+
 ***
 Es una herramienta creada con el fin de proporcionar una interfaz simple
 para la elaboración de documentos PDF, utilizando Markdown y LaTeX. El
