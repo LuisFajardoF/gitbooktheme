@@ -41,7 +41,7 @@ Si **md2tex** se encuentra en una carpeta local puede ejecutarlo con el siguient
 ```bash
 $ ./md2tex test.md
 ```
-El archivo $$\LaTeX$$ generado por md2tex es el siguiente:
+El archivo LaTeX generado por md2tex es el siguiente:
 
 ```latex
 \documentclass{article}
