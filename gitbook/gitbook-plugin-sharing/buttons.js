@@ -1,7 +1,7 @@
 require(['gitbook', 'jquery'], function(gitbook, $) {
     var SITES = {
         'github': {
-            'label': '   GitHub',
+            'label': 'GitHub',
             'icon': 'fab fa-github',
             'onClick': function(e) {
                 e.preventDefault();
@@ -14,6 +14,14 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://t.me/luis96791');
+            }
+        },
+        'download': {
+            'label': 'Download',
+            'icon': 'fas fa-download', 
+            'onClick': function(e) {
+                e.preventDefault();
+                window.open('https://luisfajardof.github.io/md2tex-docs/download.html');
             }
         }
     };
@@ -49,6 +57,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
             gitbook.toolbar.createButton({
                 icon: site.icon,
+                title: site.title,
                 label: site.text,
                 position: 'right',
                 onClick: site.onClick

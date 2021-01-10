@@ -317,3 +317,70 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* notification boxes */
+.webnots-notification-box {
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: verdana, 'open sans', sans-serif;
+  margin-bottom: 90px;
+  padding: 10px 14px 10px 60px;
+  position: relative;
+}
+.webnots-notification-box:before {
+  font-family: FontAwesome;
+  font-size: 50px;
+  left: 8px;
+  position: absolute;
+}
+.webnots-information-3lines {
+  background-color: #2a3f4b;
+}
+.webnots-information-3lines:before {
+  content: "\f05a";
+  margin-left: -1px;
+}
+.webnots-question-3lines {
+  background-color: #f1c40f;
+}
+.webnots-question-3lines:before {
+  content: "\f059";
+  margin-left: -1px;
+}
+.webnots-tip-3lines {
+  background-color: #16a085;
+}
+.webnots-tip-3lines:before {
+  content: "\f0eb";
+  margin-left: 4px;
+}
+.webnots-notice-3lines {
+  background-color: #bea474;
+}
+.webnots-notice-3lines:before {
+  content: "\f0a1";
+  font-size: 45px;
+  margin-left: 1px;
+}
+.webnots-success-3lines {
+  background-color: #2ecc71;
+}
+.webnots-success-3lines:before {
+  content: "\f00c";
+  margin-left: -1px;
+}
+.webnots-failure-3lines {
+  background-color: #e74c3c;
+}
+.webnots-failure-3lines:before {
+  content: "\f00d";
+  margin-left: 1px;
+}
+.webnots-warning-3lines {
+  background-color: #e67e22;
+}
+.webnots-warning-3lines:before {
+  content: "\f071";
+  font-size: 40px;
+  margin-left: 1px;
+}

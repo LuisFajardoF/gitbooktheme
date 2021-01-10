@@ -74,7 +74,7 @@ add_latex_document (
 
 Dentro de la carpeta `latex` cree una carpeta llamada `build`, aquí será construido su documento PDF.
 
-Antes de compilar con LaTeX, la estructura de archivos debe ser similar a la siguiente:
+Antes de compilar con $$\LaTeX$$, la estructura de archivos debe ser similar a la siguiente:
 
 ```
 my-folder
