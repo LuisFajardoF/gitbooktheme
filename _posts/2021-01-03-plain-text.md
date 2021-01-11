@@ -89,7 +89,7 @@ documento y no sabemos por qué _(Tomado de: [Una nota sobre los archivos auxili
 El archivo `test.pdf` puede abrirlo con su lector de archivos PDF. El resultado será similar al
 siguiente:
 
-<embed src="../assets/pdf/plain_text_demo.pdf" height="450" width="800">
+<!-- <embed src="../assets/pdf/plain_text_demo.pdf" height="450" width="800"> -->
 <!-- {% pdf "../assets/pdf/plain_text_demo.pdf" no_link %} -->
 - [Ver PDF - Demostración de Texto Plano][2]{:target="_blank"}
 
