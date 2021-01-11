@@ -38,4 +38,3 @@ regenerate:       true
 
 plugins:
   - jemoji
-  - jekyll-pdf-embed
