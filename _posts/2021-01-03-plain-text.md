@@ -3,7 +3,7 @@ title: Procesamiento de Texto Plano
 author: Luis E. Fajardo
 category: plaintext
 date: 05-01-2021
-edited: 08-01-2021
+edited: 11-01-2021
 layout: post
 ---
 ***
@@ -89,10 +89,11 @@ documento y no sabemos por qué _(Tomado de: [Una nota sobre los archivos auxili
 El archivo `test.pdf` puede abrirlo con su lector de archivos PDF. El resultado será similar al
 siguiente:
 
-![plain text image][2]{:title="Apariencia Texto Plano LaTeX" class="center-image"}
+{%pdf "../assets/pdf/plain_text_demo.pdf" no_link %}
+- [Ver PDF - Demostración de Texto Plano][2]{:target="_blank"}
 
 > Debido a limitaciones de la herramienta no se soportan caracteres en formato UTF-8.
 
 
 [1]: https://ondiz.github.io/cursoLatex/Contenido/Ap1.Auxiliares.html
-[2]: ../assets/images/pdflatex/plain-text.png
+[2]: ../assets/pdf/plain_text_demo.pdf

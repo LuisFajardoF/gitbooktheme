@@ -10,6 +10,7 @@ layout: post
 **Contenido**
 * TOC
 {:toc}
+
 ***
 
 ### Ejecución de _md2tex_
