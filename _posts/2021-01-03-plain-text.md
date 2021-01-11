@@ -89,6 +89,7 @@ documento y no sabemos por qué _(Tomado de: [Una nota sobre los archivos auxili
 El archivo `test.pdf` puede abrirlo con su lector de archivos PDF. El resultado será similar al
 siguiente:
 
+<embed src="../assets/pdf/plain_text_demo.pdf" height="450" width="800">
 - [Ver PDF - Demostración de Texto Plano][2]{:target="_blank"}
 
 > Debido a limitaciones de la herramienta no se soportan caracteres en formato UTF-8.
