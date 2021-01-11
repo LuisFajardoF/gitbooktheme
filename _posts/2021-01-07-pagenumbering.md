@@ -148,7 +148,8 @@ $ pdflatex test.tex
 
 La salida PDF será similar a la siguiente:
 
-<embed src="../assets/pdf/pagenumbering_demo.pdf" height="450" width="770">
+<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/pagenumbering_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
+
 - [Ver PDF - Demostración Numeración de Páginas][1]{:target="_blank"}
 
 > Cada vez que se cambie el parámetro _pagenumbering_, la numeración será reiniciada.
