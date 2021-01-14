@@ -8,27 +8,29 @@ Con **md2tex** se abordan las principales funcionalidades de LaTeX, de manera qu
 
 **md2tex** requiere de una entrada proporcionada por el usuario, es decir, el usuario crea un nuevo archivo de texto con la extensión .md, escribe texto en el archivo, **md2tex** tratará de interpretar el contenido del archivo y si no se producen errores generará código LaTeX creando un archivo de extensión `.tex`, este archivo podrá ser compilado por el compilador _pdfLaTeX_ y de esta manera se generará un archivo de extensión _.pdf_.
 
+> _:file_folder: El archivo ejecutable de **md2tex** puede encontrarlo [aquí][2]._
+
 ## Acerca de la documentación de _md2tex_
 
 En este repositorio se encuentra la documentación de la herramienta **md2tex**. El sitio donde se 
 encuentra la documentación es servido por [GitHub Pages][1], el contenido de la página es gestionado
-con [Jekyll][4] y la plantilla utilizada es **jekyll-gitbook**[^5]. 
-> <i class="fas fa-info-circle fa-1x"></i> [¿Que es Jekyll?][6]
+con [Jekyll][4] y la plantilla utilizada es **jekyll-gitbook**:pushpin:. 
+> :information_source: [¿Que es Jekyll?][6]
 
 La página de **md2tex** se encuentra en el siguiente enlace: https://luisfajardof.github.io/md2tex-docs/. 
 La documentación esta redactada como __*entradas de post*__ y el contenido es el siguiente:
 
-- [**md2tex**][7]
-- [**Instalación de paquetes LaTeX**][8]
-- [**Entorno de ejecución**][9]
-- [**Procesamiento de Texto Plano**][10]
-- [**Énfasis de Texto**][11]
-- [**Encabezados**][12]
-- [**Numeración de páginas**][13]
-- [**Figuras**][14]
-- [**Generación de contenido**][15]
-- [**Portadas**][16]
-- [**Recursos**][17]
+> :link: [**md2tex**][7]  
+> :link: [**Instalación de paquetes LaTeX**][8]  
+> :link: [**Entorno de ejecución**][9]  
+> :link: [**Procesamiento de Texto Plano**][10]  
+> :link: [**Énfasis de Texto**][11]  
+> :link: [**Encabezados**][12]  
+> :link: [**Numeración de páginas**][13]  
+> :link: [**Figuras**][14]  
+> :link: [**Generación de contenido**][15]  
+> :link: [**Portadas**][16]  
+> :link: [**Recursos**][17]  
 
 ## Compilación con Ruby
 
@@ -45,14 +47,19 @@ O ejecute los archivos de la carpeta `scripts`:
 ```bash
 $ sh scripts/server
 ```
-> <i class="fas fa-info-circle fa-1x"></i> En algunos casos deberá ejecutar los scripts: `bootstrap`, `build` y `cibuild` antes de ejecutar el script `server`.
+
+> :information_source: En algunos casos deberá ejecutar los scripts: `bootstrap`, `build` y `cibuild` antes de ejecutar el script `server`.
 
 El comando anterior inicia el servicio _(localhost)_ en la siguiente dirección: `http://127.0.0.1:4000/md2tex-docs/`.
 
+***
+
+> :pushpin: La plantilla utilizada en la documentación de **md2tex** es un fork de: https://github.com/sighingnow/jekyll-gitbook/ 
+
 [1]: https://pages.github.com
+[2]: https://github.com/LuisFajardoF/md2tex-docs/releases
 [3]: https://github.com/sighingnow/jekyll-gitbook/
 [4]: https://jekyllrb.com/
-[^5]: La plantilla utilizada en la documentación de **md2tex** es un fork de: https://github.com/sighingnow/jekyll-gitbook/ 
 [6]: http://www.arquitectoit.com/jekyll/que-es-jekyll/
 [7]: https://luisfajardof.github.io/md2tex-docs/
 [8]: https://luisfajardof.github.io/md2tex-docs/env/2021-01-05-install-latex.html
