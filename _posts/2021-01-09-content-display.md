@@ -1,11 +1,15 @@
 ---
-title: Tablas de contenido 
+title: Generación de contenido
 author: Luis E. Fajardo
 date: 12-01-2021
-edited: 12-01-2021
+edited: 13-01-2021
 category: voc
 layout: post
 ---
+
+**Contenido**
+* TOC
+{:toc}
 
 ***
 
@@ -22,9 +26,11 @@ lot         | Muestra una lista de todas las tablas que hay en el documento.    
 
 > <i class="fas fa-exclamation-circle fa-1x"></i> Para mostrar la tabla de contenido, el parámetro _numbered_ debe estar establecido en _yes_.
 
-El parámetro `toc` puede tener 3 valores: _yes_, _no_ y _custom_. Al establecerlo en _custom_
-podrá definir los sub-parpámetros _spacing_ y _depth_. Con estos parámetros podrá manipular
-la tabla de contenido.
+## Tabla de Contenido
+
+Para generar la tabla de contenido **md2tex** hace uso del parámetro `toc` y puede tener 3 valores: 
+_yes_, _no_ y _custom_. Al establecerlo en _custom_ podrá definir los sub-parámetros _spacing_ y 
+_depth_. Con estos parámetros podrá manipular la tabla de contenido.
 
 A continuación se describe una sintaxis para mostrar la tabla de contenido del documento:
 
@@ -175,13 +181,148 @@ $ pdflatex test.tex
 La primera vez que se compila con pdfLaTeX se crea un archivo auxiliar de extensión `.toc` pero
 la tabla no se genera en el documento. En la segunda compilación pdfLaTeX lee el contenido del 
 archivo `.toc` y lo pone en el documento final.
-> <i class="fas fa-lightbulb"></i> Si utiliza CMake para generar su documento, no necesitará 
+> <i class="fas fa-lightbulb"></i> Si utiliza CMake para generar su documento, **NO** necesitará 
 > compilar 2 veces los archivos `.tex`.
 
 El resultado final será el siguiente:
 
-<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="1"></iframe>
+<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
 
-- [Ver PDF - Demostración Tabla de contenido][1]{:target="_blank"}
+- [Ver PDF - Demostración Tabla de contenido][3]{:target="_blank"}
 
 [1]: {{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf
+
+## Lista de Figuras
+
+Para aplicar una lista de figuras en **md2tex** se utiliza el parámetro `lof`, este es un parámetro
+de tipo _binario_: los valores que puede tener son _yes_ o _no_. Por defecto, **md2tex**, no incluye
+la implementación de lista de figuras en el código generado. La sintaxis para el parámetro `lof`
+es la siguiente:
+
+```md
+!--
+	lof: <value>
+--!
+```
+
+### Demostración
+
+En un archivo de texto _(por ejemplo: `test.md`)_, escriba lo siguiente:
+
+```md
+!--
+	lof: yes
+--!
+
+## Ciudades Coloniales
+
+![Ciudad de Cartagena de Indias, w=8cm, h=6cm, oht](cartagena_indias.jpg)
+![Ciudad de San Miguel Allende, w=8cm, h=6cm, oht](san_miguel_allende.jpg)
+![Ciudad de Cuzco, w=10cm, h=7cm, oht](cuzco.jpg)
+
+## Figuras Planas
+
+![{Figuras geometricas de dos dimensiones, oht}:Cuadrado, w=2.5cm, h=2.5cm; Circulo, w=2.5cm, h=2.5cm; Rombo, s=0.5; Pentagono, s=0.5, a=45](figuras2d/cuadrado.png, figuras2d/circulo.png, figuras2d/rombo.png, figuras2d/pentagono.png) 
+```
+> <i class="fas fa-file-archive fa-1x"></i> Puede descargar las imagenes: [figuras simples][1]{:target="_blank"} y [figuras múltiples][2]{:target="_blank"}.
+
+Desde la línea de comandos, ejecute:
+
+```bash
+$ ./md2tex test.md
+```
+
+El código generado por **md2tex**, es el siguiente:
+
+```latex
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\begin{document}
+	\listoffigures
+
+	\subsection*{Ciudades Coloniales}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=8cm, height=6cm]{../images/cartagena_indias.jpg}
+		\caption{Ciudad de Cartagena de Indias}
+	\end{figure}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=8cm, height=6cm]{../images/san_miguel_allende.jpg}
+		\caption{Ciudad de San Miguel Allende}
+	\end{figure}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=10cm, height=7cm]{../images/cuzco.jpg}
+		\caption{Ciudad de Cuzco}
+	\end{figure}
+
+	\subsection*{Figuras Planas}
+
+	\begin{figure}[!ht]
+		\centering
+		\subfigure[Cuadrado]{
+			\includegraphics[width=2.5cm, height=2.5cm]{../images/figuras2d/cuadrado.png}
+		}
+		\subfigure[ Circulo]{
+			\includegraphics[width=2.5cm, height=2.5cm]{../images/figuras2d/circulo.png}
+		}
+		\subfigure[ Rombo]{
+			\includegraphics[scale=0.5]{../images/figuras2d/rombo.png}
+		}
+		\subfigure[ Pentagono]{
+			\includegraphics[scale=0.5, angle=45]{../images/figuras2d/pentagono.png}
+		}
+		\caption{Figuras geometricas de dos dimensiones}
+	\end{figure}
+\end{document}
+```
+Vaya a la carpeta `latex/tex`. Necesitará compilar dos veces el archivo `test.tex`, para
+generar el archivo PDF.
+
+```bash
+$ pdflatex test.tex
+$ pdflatex test.tex
+```
+Al igual que en las tablas de contenido; para las figuras, en la primera compilación LaTeX 
+genera un archivo de extensión `.lof` y en la segunda compilación lee este archivo y muestra
+su contenido en el documento final.
+> <i class="fas fa-lightbulb"></i> Si utiliza CMake para generar su documento, **NO** necesitará 
+> compilar 2 veces los archivos `.tex`.
+
+El resultado final es el siguiente:
+
+<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/lof_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
+
+- [Ver PDF - Demostración Lista de Figuras][4]{:target="_blank"}
+
+## Lista de Tablas
+
+Una lista de tablas en **md2tex** es gestionada mediante el parámetro `lot`, este también es un parámetro
+de tipo _binario_. Por defecto, **md2tex**, no incluye la implementación de lista de tablas en el código
+generado. La sintaxis para el parámetro `lot` es la siguiente:
+
+```md
+!--
+	lot: <value>
+--!
+```
+
+### Demostración
+
+<div class="container" align="center">
+    <i class="fas fa-laptop-code fa-7x"></i>
+	<h5>En desarrollo...</h5>
+</div>
+
+
+[1]: {{site.url}}{{site.baseurl}}/assets/zip/simple_figures.zip
+[2]: {{site.url}}{{site.baseurl}}/assets/zip/multiple_figures.zip
+[3]: {{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf
+[4]: {{site.url}}{{site.baseurl}}/assets/pdf/lof_demo.pdf

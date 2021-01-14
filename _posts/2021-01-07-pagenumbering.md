@@ -154,4 +154,4 @@ La salida PDF será similar a la siguiente:
 
 > Cada vez que se cambie el parámetro _pagenumbering_, la numeración será reiniciada.
 
-[1]: ../assets/pdf/pagenumbering_demo.pdf
+[1]: {{site.url}}{{site.baseurl}}/assets/pdf/pagenumbering_demo.pdf

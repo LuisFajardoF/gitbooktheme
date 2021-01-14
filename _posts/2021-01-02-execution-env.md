@@ -102,5 +102,5 @@ Si no ocurre ningún error; su archivo PDF estará dentro de la carpeta `build` 
 > - Si no ha descargado **UseLATEX.cmake**, vaya a la sección [Recursos][1] de esta página y busque el apartado **UseLATEX.cmake**.
 
 
-[1]: /md2tex-docs/resources.html
+[1]: {{site.url}}{{site.baseurl}}/md2tex-docs/resources.html
 [2]: https://riptutorial.com/es/cmake

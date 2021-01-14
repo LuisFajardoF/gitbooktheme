@@ -97,4 +97,4 @@ siguiente:
 
 
 [1]: https://ondiz.github.io/cursoLatex/Contenido/Ap1.Auxiliares.html
-[2]: ../assets/pdf/plain_text_demo.pdf
+[2]: {{site.url}}{{site.baseurl}}/assets/pdf/plain_text_demo.pdf
