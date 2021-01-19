@@ -78,13 +78,13 @@ Dentro de la carpeta `latex` cree una carpeta llamada `build`, aquí será const
 Antes de compilar con LaTeX, la estructura de archivos debe ser similar a la siguiente:
 
 ```
-my-folder
+my-folder/
 ├── md2tex
 ├── test.md
-└── latex
-    ├── build
-    ├── images
-    ├── tex
+└── latex/
+    ├── build/
+    ├── images/
+    ├── tex/
         └── test.tex
     ├── CMakeLists.txt
     └── UseLATEX.cmake

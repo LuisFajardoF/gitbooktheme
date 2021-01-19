@@ -4,7 +4,7 @@ longtitle:        md2tex
 author:           Luis E. Fajardo
 email:            luis.fajardozap@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  md2tex: Herramienta para la generación de código LaTeX.
 
 version:          1.0
 gitbook_version:  3.2.3

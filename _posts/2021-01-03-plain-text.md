@@ -71,7 +71,7 @@ $ pdflatex test.tex
 El comando `pdflatex` compilará el archivo `test.tex` y generará 3 nuevos archivos:
 
 ```
-tex
+tex/
 ├── test.aux
 ├── test.log
 └── test.pdf
