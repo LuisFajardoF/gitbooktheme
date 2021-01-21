@@ -38,11 +38,14 @@
 
             <li class="divider"></li>
             
-            <li>
-                <a href="{{site.baseurl}}/resources.html">
-                    Recursos
-                </a>
-            </li>
+            {% if page.url == "/resources.html" %}
+                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}">
+            {% else %}
+                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+            {% endif %}
+            <h3>
+                <a href="{{site.baseurl}}/resources.html">Recursos</a>
+            </h3>
         </ul>
     </nav>
 </div>
