@@ -2,7 +2,7 @@
 title: Generación de contenido
 author: Luis E. Fajardo
 date: 12-01-2021
-edited: 13-01-2021
+edited: 31-01-2021
 category: voc
 layout: post
 ---
@@ -313,16 +313,90 @@ generado. La sintaxis para el parámetro `lot` es la siguiente:
 	lot: <value>
 --!
 ```
+> Donde \<value\> puede establecerse en _yes_ o _no_.
 
 ### Demostración
 
-<div class="container" align="center">
-    <i class="fas fa-laptop-code fa-7x"></i>
-	<h5>En desarrollo...</h5>
-</div>
+En un nuevo archivo de texto, escriba lo siguiente:
+
+```md
+!--
+    lot: yes
+--!
+
+![Valores aleatorios para la Tabla 1.; style1; csv]{
+        ../csv/table1.csv
+}
+
+![Valores aleatorios para la Tabla 2.; style1-lime; csv]{
+        ../csv/table2.csv
+}
+```
+Ejecute **md2tex** desde la línea de comandos:
+
+```sh
+$ ./md2tex test.md
+```
+
+El código generado por **md2tex** es el siguiente:
+
+```tex
+\documentclass{article}
+
+\usepackage{booktabs}
+\usepackage{pgfplotstable}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\begin{document}
+	\listoftables
+
+	\begin{table}[h!]
+		\centering
+		\pgfplotstabletypeset[
+			col sep=comma,
+			string type,
+			assign column name/.style={/pgfplots/table/column name={\textbf{#1}}},
+			every head row/.style={before row=\toprule, after row=\midrule},
+			every last row/.style={after row=\midrule},
+		]{../csv/table1.csv}
+		\caption{Valores aleatorios para la Tabla 1.}
+	\end{table}
+
+	\begin{table}[h!]
+		\centering
+		\pgfplotstabletypeset[
+			col sep=comma,
+			string type,
+			every head row/.style={before row=\toprule, after row=\midrule},
+			assign column name/.style={/pgfplots/table/column name={\textbf{#1}}},
+			every even row/.style={after row ={\rowcolor{lime!30}}, before row={\rowcolor{lime!10}}},
+			every last row/.style={after row=\midrule},
+		]{../csv/table2.csv}
+		\caption{Valores aleatorios para la Tabla 2.}
+	\end{table}
+\end{document}
+```
+
+Ubiquese en la carpeta `latex/tex/`, necesitará compilar el archivo `.tex` dos veces para que la 
+lista de tablas se vea reflejada en el documento PDF. La primera compilación generará o actualizará
+un archivo de extensión `.lot` y la segunda compilación reflejará el contenido del archivo `.lot` en 
+el documento PDF.
+
+Ejecute _pdfLaTex_:
+```sh
+$ pdflatex test.tex
+$ pdflatex test.tex
+```
+El compilador de _pdfLaTeX_ generará el siguiente archivo PDF:
+
+<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
+
+- [Ver PDF - Demostración de Lista de Tablas][5]{:target="_blank"}
 
 
 [1]: {{site.url}}{{site.baseurl}}/assets/zip/simple_figures.zip
 [2]: {{site.url}}{{site.baseurl}}/assets/zip/multiple_figures.zip
 [3]: {{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf
 [4]: {{site.url}}{{site.baseurl}}/assets/pdf/lof_demo.pdf
+[5]: {{site.url}}{{site.baseurl}}/assets/pdf/lot_demo.pdf
