@@ -1,6 +1,6 @@
 ---
 title: Recursos
-author: Luis E.Fajardo
+author: Luis E. Fajardo
 date: 21-01-2021
 edited: 21-01-2021
 layout: home
@@ -11,7 +11,7 @@ Aquí encuentra las herramientas de desarrollo, tutoriales y demostraciones para
 
 ***
 
-### <i class="fas fa-file-download fa-1x"></i> [md2tex v1][1]{:target="_blank"}
+### <i class="fas fa-file-download fa-1x"></i> [md2tex v1.1.0][1]{:target="_blank"}
 > Descargue la primera versión de **md2tex**. Esta vesión aún se encuentra en desarrollo.
 
 ***
@@ -70,10 +70,11 @@ Aquí encuentra las herramientas de desarrollo, tutoriales y demostraciones para
 > ```sh
 > $ bash run-tests --manual-config
 > ```
-> _<i class="fas fa-info-circle fa-1x"></i> Es probable que el archivo **run-tests** necesite permisos de ejecución. Si es el caso, ejecute: `chmod +rwx run-tests`_.
+> _<i class="fas fa-info-circle fa-1x"></i> Es probable que el archivo **run-tests** necesite permisos de ejecución. Si es el caso, ejecute:  
+> `chmod +rwx run-tests`_.
 
 
-[1]: {{site.url}}{{site.baseurl}}/assets/app/v1/md2tex
+[1]: {{site.url}}{{site.baseurl}}/assets/app/v1.1.0/md2tex
 [2]: {{site.url}}{{site.baseurl}}/assets/pdf/dev-tools.pdf
 [3]: {{site.url}}{{site.baseurl}}/assets/pdf/md2tex-v1.pdf
 [4]: https://cmake.org/download/
