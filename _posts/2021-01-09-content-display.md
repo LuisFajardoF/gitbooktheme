@@ -390,7 +390,7 @@ $ pdflatex test.tex
 ```
 El compilador de _pdfLaTeX_ generará el siguiente archivo PDF:
 
-<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/toc_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/gview?url={{site.url}}{{site.baseurl}}/assets/pdf/lot_demo.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
 
 - [Ver PDF - Demostración de Lista de Tablas][5]{:target="_blank"}
 
