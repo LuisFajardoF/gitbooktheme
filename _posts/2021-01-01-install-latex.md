@@ -2,7 +2,7 @@
 title: Instalación de paquetes LaTeX
 author: Luis E. Fajardo
 date: 05-01-2021
-edited: 21-01-2021
+edited: 06-04-2021
 category: env
 layout: post
 ---
@@ -22,7 +22,15 @@ Los requerimientos para elaborar documentos PDF con **md2tex** son los siguiente
 # En debian o derivados
 $ apt install texlive-latex-base
 ```
+### Instalación de _biber_
 
+Biber es un software utilizado para manejar las bibliografías en LaTeX. Deberá instalarlo
+en su sistema ejecutando el siguiente comando:
+
+```sh
+$ apt install biber
+```
+> <i class="fas fa-info-circle fa-1x"></i> Es posible que necesite permisos de **superusuario** para ejecutar el comando anterior.
 
 ### Configuración de _tlmgr_
 

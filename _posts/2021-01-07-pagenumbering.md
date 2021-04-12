@@ -17,7 +17,7 @@ Los tipos de numeración de páginas que **md2tex** y LaTeX soportan son los sig
 
 Tipo de numeración  | Descripción
 :-------------------|:---------------------------
-__gooble__          | Quita la numeración de páginas.
+__gobble__          | Quita la numeración de páginas.
 __arabic__          | Enumera las páginas con números arábigos.
 __roman__           | Enumera las páginas con números romanos en minúscula.
 __Roman__           | Enumera las páginas con números romanos en mayúscula.
@@ -31,7 +31,7 @@ La sintaxis para la numeración de páginas en **md2tex** puede ser la siguiente
     pagenumbering: <type_numbering>
 --!
 ```
-> Donde `<type_numbering>` puede ser: gooble, arabic, roman, Roman, alph o Alph.
+> Donde `<type_numbering>` puede ser: gobble, arabic, roman, Roman, alph o Alph.
 
 Al incluir este parámetro en su documento, en el código LaTeX generado deberá aparecer: 
 
